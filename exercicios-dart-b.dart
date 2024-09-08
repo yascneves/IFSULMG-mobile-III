@@ -12,14 +12,36 @@ void main() {
   }
 }
 
-
 // 2. Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou
 // negativo.
-
+void main(){
+  int valor = -1;
+  
+  if (valor>=0){
+    print("Valor positivo");
+  } else {
+    print("Valor negativo");
+  }
+}
 
 // 3. Faça um Programa que verifique se uma letra digitada é "F" ou "M". Conforme a
 // letra escrever: F - Feminino, M - Masculino, Sexo Inválido.
+import 'dart:io';
 
+void main() {
+  print("Digite uma letra (F ou M):");
+  String? letra = stdin.readLineSync(); //https://www.alura.com.br/artigos/entrada-saida-dados-terminal-dart
+
+  if (letra != null) { //null = vazio. No caso, o contrário de "nada"
+    if (letra == "F") {
+      print("F - Feminino");
+    } else if (letra == "M") {
+      print("M - Masculino");
+    } else {
+      print("Sexo Inválido");
+    }
+  }
+}
 
 // 4. Faça um Programa que verifique se uma letra digitada é vogal ou consoante.
 
