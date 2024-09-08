@@ -1,6 +1,16 @@
 // // Lista B
 // // Exercícios Mobile II 
 // 1. Faça um Programa que peça dois números e imprima o maior deles.
+void main() {
+  int numeroUm = 51;
+  int numeroDois = 50;
+  
+  if (numeroUm > numeroDois) {    
+    print("Maior número entre ${numeroUm} e ${numeroDois} é: ${numeroUm}");
+  } else {
+    print("Maior número entre ${numeroUm} e ${numeroDois} é: ${numeroDois}");
+  }
+}
 
 
 // 2. Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou
