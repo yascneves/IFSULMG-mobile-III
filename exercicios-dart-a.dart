@@ -1,4 +1,5 @@
 // Lista A
+// Exercícios da disciplina Mobile II
 // 1) Faça um Programa que mostre a mensagem "Alo mundo" na tela.
 void main() {
     print("Hello World");
@@ -59,6 +60,16 @@ void main() {
 
 // 7. Faça um Programa que pergunte quanto você ganha por hora e o número de horas
 // trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.
+void main() {
+  int salarioHora = 15;
+  int horasMesTrabalhado = 400;
+  
+  var calculoSalario = salarioHora * horasMesTrabalhado;
+  
+  print("Salario do Mês: ${calculoSalario}");
+}
+
+
 // 8. [Trabalho valor ___ pontos]Faça um Programa que pergunte quanto você ganha por
 // hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário
 // no referido mês, sabendo-se que são descontados 11% para o Imposto de Renda, 8%
