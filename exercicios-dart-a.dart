@@ -85,3 +85,20 @@ void main() {
 // - Sindicato ( 5%) : R$
 // = Salário Liquido : R$
 // Obs.: Salário Bruto - Descontos = Salário Líquido.
+void main() {
+  int salarioHora = 10;
+  int horasMesTrabalhado = 400;
+  
+  var calculoSalarioBruto = salarioHora * horasMesTrabalhado;
+  var calculoIR = calculoSalarioBruto * 0.11;
+  var calculoINSS = calculoSalarioBruto * 0.08;
+  var calculoSindicato = calculoSalarioBruto * 0.05;
+  var calculoSalarioLiquido = calculoSalarioBruto - (calculoIR + calculoINSS + calculoSindicato);
+  
+  print("Salario do Mês: ${calculoSalarioBruto}\n"
+        "IR: ${calculoIR}\n"
+        "INSS: ${calculoINSS}\n"
+        "Sindicato: ${calculoSindicato}\n"
+        "Salário líquido: ${calculoSalarioLiquido}"); 
+}
+
