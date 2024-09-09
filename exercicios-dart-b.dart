@@ -47,7 +47,26 @@ void main() {
 
 
 // 5. Faça um Programa que leia três números e mostre o maior deles.
-
+void main() {
+  int numeroUm = 100;
+  int numeroDois = 10;
+  int numeroTres = 5;
+  
+  if (numeroUm > numeroDois){
+      if (numeroUm > numeroTres){
+          print("Maior número: ${numeroUm}");
+      } else {
+          print("Maior número: ${numeroTres}");
+      } 
+  } else {
+     if (numeroDois > numeroTres){
+          print("Maior número: ${numeroDois}");
+      } else {
+          print("Maior número: ${numeroTres}");
+      } 
+  }
+  
+  }
 
 // 6. Faça um Programa que leia três números e mostre o maior e o menor deles.
 
